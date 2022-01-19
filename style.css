@@ -1,0 +1,51 @@
+body{
+    background: rgb(245, 234, 171);
+}
+
+.container{
+    padding: 3em;
+    column-count: 4;
+}
+
+.box {
+    display: inline-block;
+    background-color: rgb(245, 234, 171);
+    color: rgb(255, 255, 255);
+    font: 50 50px 'Kristen ITC';
+    position: relative;
+}
+
+.box:hover
+{
+    background: rgb(255, 217, 4);
+    border: 3px;
+}
+
+span {
+    text-shadow: -5px 0 gold, 0 5px gold, 5px 0 gold, 0 -5px gold;
+    position: relative;
+}
+
+img{
+    width: 80%;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+@media(max-width: 800px){
+    .container{
+        column-count: 3;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        column-count: 2;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        column-count: 1;
+    }
+}
